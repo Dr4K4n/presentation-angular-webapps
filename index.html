@@ -1,97 +1,97 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
 
-		<style type="text/css">
-			ul.none {
-			    list-style-type: none;
-			}
-			ul.none li {
-				text-indent: -1em;
-			}
-			ul.none li.pro:before {
-			    color: #97ca43;
-			    content: "+";
-			    float: left;
-			    width: 1em;
-			}
-			ul.none li.con:before {
-				color: #DE5757;
-			    content: "-";
-			    float: left;
-			    width: 1em;
-			}
+    <style type="text/css">
+      ul.none {
+          list-style-type: none;
+      }
+      ul.none li {
+        text-indent: -1em;
+      }
+      ul.none li.pro:before {
+          color: #97ca43;
+          content: "+";
+          float: left;
+          width: 1em;
+      }
+      ul.none li.con:before {
+        color: #DE5757;
+          content: "-";
+          float: left;
+          width: 1em;
+      }
 
-			section img.logo {
-				width: 20%;
-				background: none;
-				box-shadow: none;
-				margin: 1em;
-			}
+      section img.logo {
+        width: 20%;
+        background: none;
+        box-shadow: none;
+        margin: 1em;
+      }
 
-			section img.big {
-				background: none;
-				box-shadow: none;
-			}
+      section img.big {
+        background: none;
+        box-shadow: none;
+      }
 
-			section img.inline {
-				height: 1em;
-				margin: 0 0.1em;
-				background: none;
-				box-shadow: none;
-			}
+      section img.inline {
+        height: 1em;
+        margin: 0 0.1em;
+        background: none;
+        box-shadow: none;
+      }
 
-			section table img.logo {
-				width: 3em;
-				background: none;
-				box-shadow: none;
-				margin: 0;
-			}
+      section table img.logo {
+        width: 3em;
+        background: none;
+        box-shadow: none;
+        margin: 0;
+      }
 
-			section table.center {
-				width: 100%;
-				margin-top: 1em;
-				text-align: center;
-			}
+      section table.center {
+        width: 100%;
+        margin-top: 1em;
+        text-align: center;
+      }
 
-			section table.center td, section table.center th {
-				text-align: center;
-				padding: 0.3em;
-				vertical-align: middle;
-			}
+      section table.center td, section table.center th {
+        text-align: center;
+        padding: 0.3em;
+        vertical-align: middle;
+      }
 
-			section input {
-				font: inherit;
-			}
+      section input {
+        font: inherit;
+      }
 
 /*the exact same class as earlier*/
 .clip-circle{
@@ -111,334 +111,334 @@
   box-shadow:
     0 0 150px 20px #000 inset;
 }
-		</style>
+    </style>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h3><img src="prodyna.png" style="border:0" /></h3>
-					<h2>Mobile Web Apps with AngularJS</h2>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h3><img src="prodyna.png" style="border:0" /></h3>
+          <h2>Mobile Web Apps with AngularJS</h2>
+        </section>
 
-				<section>
-					<img class="big" src="img/gifs/say-you-do-here.gif" style="zoom:2"/>
+        <section>
+          <img class="big" src="img/gifs/say-you-do-here.gif" style="zoom:2"/>
 
-				</section>
+        </section>
 
-				<section>
-					<h1>about me</h1>
-					<div class="clip-circle" style="float:left"></div>
-					<ul>
-						<li>IT Consultant / Software Engineer</li>
-						<li>B.Sc. Wirtschaftsinformatik</li>
-						<li><span style="color:#97ca43;">PRODYNA</span> Düsseldorf since 10/2011</li>
-						<li>Bucher Reisen ever since</li>
-						<li>SCMA & ESD - Web Technologies</li>
-				<!-- 		<li style="margin-top:1em">Java SE/EE, JavaScript</li>
-						<li>Hibernate, Vaadin, AngularJS</li>
-						<li>DB2, MySQL, MongoDB</li>
-						<li>Maven, Jenkins, Jira</li>
-						<li>Linux, Android</li> -->
-					</ul>
+        <section>
+          <h1>about me</h1>
+          <div class="clip-circle" style="float:left"></div>
+          <ul>
+            <li>IT Consultant / Software Engineer</li>
+            <li>B.Sc. Wirtschaftsinformatik</li>
+            <li><span style="color:#97ca43;">PRODYNA</span> Düsseldorf since 10/2011</li>
+            <li>Bucher Reisen ever since</li>
+            <li>SCMA & ESD - Web Technologies</li>
+        <!--    <li style="margin-top:1em">Java SE/EE, JavaScript</li>
+            <li>Hibernate, Vaadin, AngularJS</li>
+            <li>DB2, MySQL, MongoDB</li>
+            <li>Maven, Jenkins, Jira</li>
+            <li>Linux, Android</li> -->
+          </ul>
 
-				</section>
+        </section>
 
-				<section>
-					<img class="big" src="img/skills.png">
-				</section>
+        <section>
+          <img class="big" src="img/skills.png">
+        </section>
 
-				<section>
-					<h1>Agenda</h1>
-					<h2>why?</h2>
-					<h2>how?</h2>
-				</section>
+        <section>
+          <h1>Agenda</h1>
+          <h2>why?</h2>
+          <h2>how?</h2>
+        </section>
 
-				<section>
-					<section>
-						<h2>Which possibilities do you have?</h2>
-						<ul>
-							<li>Native</li>
-							<li>Web / Hybrid</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h2>Which possibilities do you have?</h2>
+            <ul>
+              <li>Native</li>
+              <li>Web / Hybrid</li>
+            </ul>
+          </section>
 
-					<section>
-						<h2>native development</h2>
-						<table>
-							<tr>
-								<th></th>
-								<th>Android</th>
-								<th>iOS</th>
-								<th>Windows Phone</th>
-							</tr>
-	 						<tr>
-	 							<th>languages</th>
-	 							<td>Java, C</td>
-	 							<td>Objective-C, Swift</td>
-	 							<td>C#, Visual Basic, C++</td>
-	 						</tr>
-							<tr>
-								<th>tools</th>
-								<td>Eclipse/Android Studio</td>
-								<td>MacOS, XCode</td>
-								<td>Windows, Visual Studio</td>
-	 						</tr>
-						</table>
-					</section>
+          <section>
+            <h2>native development</h2>
+            <table>
+              <tr>
+                <th></th>
+                <th>Android</th>
+                <th>iOS</th>
+                <th>Windows Phone</th>
+              </tr>
+              <tr>
+                <th>languages</th>
+                <td>Java, C</td>
+                <td>Objective-C, Swift</td>
+                <td>C#, Visual Basic, C++</td>
+              </tr>
+              <tr>
+                <th>tools</th>
+                <td>Eclipse/Android Studio</td>
+                <td>MacOS, XCode</td>
+                <td>Windows, Visual Studio</td>
+              </tr>
+            </table>
+          </section>
 
-					<section>
-						<h2>Web / Hybrid</h2>
-						<p>website + "mini browser" = native app</p>
-						<ul>
-							<li>adobe phonegap/apache cordova</li>
-							<li>Appcelerator Titanium</li>
-							<li>RhoMobile</li>
-						</ul>
-					</section>
-				</section>
+          <section>
+            <h2>Web / Hybrid</h2>
+            <p>website + "mini browser" = native app</p>
+            <ul>
+              <li>adobe phonegap/apache cordova</li>
+              <li>Appcelerator Titanium</li>
+              <li>RhoMobile</li>
+            </ul>
+          </section>
+        </section>
 
-				<!-- pros / cons -->
-				<section>
-					<h2>What are the <span style="color:#97ca43;">advantages</span>?</h2>
-					<h3>&</h3>
-					<h2>What are the <span style="color:#97ca43;">use cases</span>?</h2>
-				</section>
+        <!-- pros / cons -->
+        <section>
+          <h2>What are the <span style="color:#97ca43;">advantages</span>?</h2>
+          <h3>&</h3>
+          <h2>What are the <span style="color:#97ca43;">use cases</span>?</h2>
+        </section>
 
-				<section>
-					<section>
-						<h1>native</h1>
-						<ul class="none">
-							<li class="pro">possibilities</li>
-							<li class="pro">performance</li>
-							<li class="pro">styling</li>
-							<li class="con">multiple platforms</li>
-							<li class="con">programming language</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1>native</h1>
+            <ul class="none">
+              <li class="pro">possibilities</li>
+              <li class="pro">performance</li>
+              <li class="pro">styling</li>
+              <li class="con">multiple platforms</li>
+              <li class="con">programming language</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>Native</h1>
-						<ul>
-							<li>you only need to support one platform</li>
-							<li>styling is super-important (end user market)</li>
-							<li>deep device integration (widgets, notifications, share)</li>
-						</ul>
-					</section>
+          <section>
+            <h1>Native</h1>
+            <ul>
+              <li>you only need to support one platform</li>
+              <li>styling is super-important (end user market)</li>
+              <li>deep device integration (widgets, notifications, share)</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>Native</h1>
-						<h2>examples</h2>
-						<img class="logo" src="img/spotify.png" />
-						<img class="logo" src="img/fb_icon.png" />
-						<img class="logo" src="img/angry-bird-icon.png" />
-					</section>
-				</section>
+          <section>
+            <h1>Native</h1>
+            <h2>examples</h2>
+            <img class="logo" src="img/spotify.png" />
+            <img class="logo" src="img/fb_icon.png" />
+            <img class="logo" src="img/angry-bird-icon.png" />
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>Web / hybrid</h1>
-						<ul class="none">
-							<li class="pro">multiple platforms</li>
-							<li class="pro">programming language</li>
-							<li class="con">performance</li>
-							<li class="con">limited possibilities</li>
-							<li class="con">styling</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1>Web / hybrid</h1>
+            <ul class="none">
+              <li class="pro">multiple platforms</li>
+              <li class="pro">programming language</li>
+              <li class="con">performance</li>
+              <li class="con">limited possibilities</li>
+              <li class="con">styling</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>web / hybrid</h1>
-						<ul>
-							<li>business apps</li>
-							<li>small apps (functionality)</li>
-							<li>combined development of app and website</li>
-						</ul>
-					</section>
+          <section>
+            <h1>web / hybrid</h1>
+            <ul>
+              <li>business apps</li>
+              <li>small apps (functionality)</li>
+              <li>combined development of app and website</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>web / hybrid</h1>
-						<h2>examples</h2>
-						<img class="logo" src="img/spon-icon.png" />
-						<img class="logo" src="img/itunes.png" />
-						<img class="logo" src="img/bbc-olympics.png" />
-					</section>
+          <section>
+            <h1>web / hybrid</h1>
+            <h2>examples</h2>
+            <img class="logo" src="img/spon-icon.png" />
+            <img class="logo" src="img/itunes.png" />
+            <img class="logo" src="img/bbc-olympics.png" />
+          </section>
 
-					<section>
-						<img src="img/itunes-display.jpg" />
-					</section>
-				</section>
+          <section>
+            <img src="img/itunes-display.jpg" />
+          </section>
+        </section>
 
-				<section>
-					<h1>Hypotheses</h1>
-					<h3>WebApps are fast</h3>
-					<h3>WebApps look fabolous</h3>
-					<h3>WebApps are ready for production</h3>
+        <section>
+          <h1>Hypotheses</h1>
+          <h3>WebApps are fast</h3>
+          <h3>WebApps look fabolous</h3>
+          <h3>WebApps are ready for production</h3>
 
-					<aside class="notes">endusers can hardly notice the difference, I will show you what can be done today</aside>
-				</section>
+          <aside class="notes">endusers can hardly notice the difference, I will show you what can be done today</aside>
+        </section>
 
-				<section>
-					<section>
-						<h1><span style="color:#97ca43;">website</span> vs <span style="color:#97ca43;">web app</span></h1>
-						<p>What about...</p>
-						<ul>
-							<li>offline?</li>
-							<li>gps and camera?</li>
-							<li>styling?</li>
-							<li>JavaScript? really?</li>
-						</ul>
-					</section>
-				</section>
+        <section>
+          <section>
+            <h1><span style="color:#97ca43;">website</span> vs <span style="color:#97ca43;">web app</span></h1>
+            <p>What about...</p>
+            <ul>
+              <li>offline?</li>
+              <li>gps and camera?</li>
+              <li>styling?</li>
+              <li>JavaScript? really?</li>
+            </ul>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>JavaScript</h1>
-						<p>It is better now.</p>
-						<ul class="none">
-							<li class="pro">it is fast</li>
-							<li class="pro">good tools</li>
-							<li class="pro">good frameworks</li>
-							<li class="pro">HTML5 makes things easier</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1>JavaScript</h1>
+            <p>It is better now.</p>
+            <ul class="none">
+              <li class="pro">it is fast</li>
+              <li class="pro">good tools</li>
+              <li class="pro">good frameworks</li>
+              <li class="pro">HTML5 makes things easier</li>
+            </ul>
+          </section>
 
-					<section>
-						<img class="big" src="img/html5_javascript_js.png" />
-					</section>
+          <section>
+            <img class="big" src="img/html5_javascript_js.png" />
+          </section>
 
-					<section>
-						<h1>Tools</h1>
-						<p>Most of them are based on <a href="http://nodejs.org/"><img class="inline" src="img/nodejs.svg" /></a> - a platform to run JavaScript with Googles V8 engine outside of the browser</p>
-						<table class="center">
-							<tr>
-								<th class="fragment" data-fragment-index="1">depend</th>
-								<th class="fragment" data-fragment-index="2">scaffold</th>
-								<th class="fragment" data-fragment-index="3">develop</th>
-								<th class="fragment" data-fragment-index="4">check</th>
-								<th class="fragment" data-fragment-index="5">test</th>
-								<th class="fragment" data-fragment-index="6">build</th>
-								<th class="fragment" data-fragment-index="7">debug</th>
-							</tr>
-							<tr>
-								<td class="fragment" data-fragment-index="1">
-									<img class="logo" src="img/bower-logo.png" /></td>
-								<td class="fragment" data-fragment-index="2">
-									<img class="logo" src="img/yeoman.png" /></td>
-								<td class="fragment" data-fragment-index="3">
-									<img class="logo" src="img/webstorm_logo_small.png" /></td>
-								<td class="fragment" data-fragment-index="4">
-									<img class="logo" src="img/jslint.gif" /></td>
-								<td class="fragment" data-fragment-index="5">
-									<img class="logo" src="img/jasmine_vertical.svg" /></td>
-								<td class="fragment" data-fragment-index="6">
-									<img class="logo" src="img/grunt-logo.png" /></td>
-								<td class="fragment" data-fragment-index="7">
-									<img class="logo" src="img/micon_chrome.png" /></td>
-							</tr>
-							<tr>
-								<td class="fragment" data-fragment-index="1"><a href="http://www.bower.io/">bower</a></td>
-								<td class="fragment" data-fragment-index="2"><a href="http://www.yeoman.io">yeoman</a></td>
-								<td class="fragment" data-fragment-index="3"><a href="http://www.jetbrains.com/webstorm/">WebStorm</a></td>
-								<td class="fragment" data-fragment-index="4"><a href="http://www.jslint.com/">jslint</a></td>
-								<td class="fragment" data-fragment-index="5"><a href="http://jasmine.github.io/">jasmine</a></td>
-								<td class="fragment" data-fragment-index="6"><a href="http://gruntjs.com/">grunt</a></td>
-								<td class="fragment" data-fragment-index="7"><a href="http://www.google.de/intl/de/chrome/browser/">Chrome dev tools</a></td>
-							</tr>
-						</table>
-					</section>
-				</section>
+          <section>
+            <h1>Tools</h1>
+            <p>Most of them are based on <a href="http://nodejs.org/"><img class="inline" src="img/nodejs.svg" /></a> - a platform to run JavaScript with Googles V8 engine outside of the browser</p>
+            <table class="center">
+              <tr>
+                <th class="fragment" data-fragment-index="1">depend</th>
+                <th class="fragment" data-fragment-index="2">scaffold</th>
+                <th class="fragment" data-fragment-index="3">develop</th>
+                <th class="fragment" data-fragment-index="4">check</th>
+                <th class="fragment" data-fragment-index="5">test</th>
+                <th class="fragment" data-fragment-index="6">build</th>
+                <th class="fragment" data-fragment-index="7">debug</th>
+              </tr>
+              <tr>
+                <td class="fragment" data-fragment-index="1">
+                  <img class="logo" src="img/bower-logo.png" /></td>
+                <td class="fragment" data-fragment-index="2">
+                  <img class="logo" src="img/yeoman.png" /></td>
+                <td class="fragment" data-fragment-index="3">
+                  <img class="logo" src="img/webstorm_logo_small.png" /></td>
+                <td class="fragment" data-fragment-index="4">
+                  <img class="logo" src="img/jslint.gif" /></td>
+                <td class="fragment" data-fragment-index="5">
+                  <img class="logo" src="img/jasmine_vertical.svg" /></td>
+                <td class="fragment" data-fragment-index="6">
+                  <img class="logo" src="img/grunt-logo.png" /></td>
+                <td class="fragment" data-fragment-index="7">
+                  <img class="logo" src="img/micon_chrome.png" /></td>
+              </tr>
+              <tr>
+                <td class="fragment" data-fragment-index="1"><a href="http://www.bower.io/">bower</a></td>
+                <td class="fragment" data-fragment-index="2"><a href="http://www.yeoman.io">yeoman</a></td>
+                <td class="fragment" data-fragment-index="3"><a href="http://www.jetbrains.com/webstorm/">WebStorm</a></td>
+                <td class="fragment" data-fragment-index="4"><a href="http://www.jslint.com/">jslint</a></td>
+                <td class="fragment" data-fragment-index="5"><a href="http://jasmine.github.io/">jasmine</a></td>
+                <td class="fragment" data-fragment-index="6"><a href="http://gruntjs.com/">grunt</a></td>
+                <td class="fragment" data-fragment-index="7"><a href="http://www.google.de/intl/de/chrome/browser/">Chrome dev tools</a></td>
+              </tr>
+            </table>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>styling</h1>
-						<ul>
-							<li>no big difference</li>
-							<li><span style="color:#97ca43;">responsive webdesign</span></li>
-							<li>MOBILE FIRST!</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1>styling</h1>
+            <ul>
+              <li>no big difference</li>
+              <li><span style="color:#97ca43;">responsive webdesign</span></li>
+              <li>MOBILE FIRST!</li>
+            </ul>
+          </section>
 
-					<section>
-						<img src="img/Responsive_Webdesign_Basics_Ausschnitt.jpg" />
-					</section>
+          <section>
+            <img src="img/Responsive_Webdesign_Basics_Ausschnitt.jpg" />
+          </section>
 
-					<section>
-						<h1>styling</h1>
-						<p>there are a lot of frameworks to support you. CSS and JS</p>
-						<ul>
-							<li>Bootstrap</li>
-							<li>Ionic</li>
-							<li>jQuery Mobile</li>
-							<li>Sencha Touch</li>
-							<li>OnsenUI</li>
-							<li>KendoUI</li>
-							<li>...</li>
-						</ul>
-					</section>
-				</section>
+          <section>
+            <h1>styling</h1>
+            <p>there are a lot of frameworks to support you. CSS and JS</p>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Ionic</li>
+              <li>jQuery Mobile</li>
+              <li>Sencha Touch</li>
+              <li>OnsenUI</li>
+              <li>KendoUI</li>
+              <li>...</li>
+            </ul>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>device integration</h1>
-						<p>HTML5 to the rescue. There are APIs for...</p>
-						<ul>
-							<li>camera</li>
-							<li>microphone</li>
-							<li>location (gps/network/wifi)</li>
-							<li>device orientation</li>
-							<li>filesystem</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1>device integration</h1>
+            <p>HTML5 to the rescue. There are APIs for...</p>
+            <ul>
+              <li>camera</li>
+              <li>microphone</li>
+              <li>location (gps/network/wifi)</li>
+              <li>device orientation</li>
+              <li>filesystem</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>device integration</h1>
-						<p>phonegap has plugins to use even more. They wrap are native API/library into JavaScript.</p>
-						<ul>
-							<li>choose image from gallery</li>
-							<li>use google speech recognition</li>
-							<li>use native dialogs</li>
-							<li>make in-app purchases</li>
-							<li>...</li>
-						</ul>
-					</section>
-				</section>
+          <section>
+            <h1>device integration</h1>
+            <p>phonegap has plugins to use even more. They wrap are native API/library into JavaScript.</p>
+            <ul>
+              <li>choose image from gallery</li>
+              <li>use google speech recognition</li>
+              <li>use native dialogs</li>
+              <li>make in-app purchases</li>
+              <li>...</li>
+            </ul>
+          </section>
+        </section>
 
-				<section>
-					<section>
-						<h1>offline</h1>
-						<p>Again HTML5 to the rescue</p>
-						<ul>
-							<li>SPAs = "fat clients"</li>
-							<li>AppCache</li>
-							<li>Data storage beyond cookies</li>
-							<li>Online/Offline events</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1>offline</h1>
+            <p>Again HTML5 to the rescue</p>
+            <ul>
+              <li>SPAs = "fat clients"</li>
+              <li>AppCache</li>
+              <li>Data storage beyond cookies</li>
+              <li>Online/Offline events</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>offline</h1>
-						<p>some examples</p>
-						<ul>
-							<li><a href="http://www.mytextarea.com/">mytextarea.com</a></li>
-							<li>Gmail Offline</li>
-							<li>Chrome/Firefox apps</li>
-						</ul>
-					</section>
+          <section>
+            <h1>offline</h1>
+            <p>some examples</p>
+            <ul>
+              <li><a href="http://www.mytextarea.com/">mytextarea.com</a></li>
+              <li>Gmail Offline</li>
+              <li>Chrome/Firefox apps</li>
+            </ul>
+          </section>
 
-					<section>
-						<h1>offline</h1>
-						<p><a href="http://www.mytextarea.com/">mytextarea.com</a></p>
-						<pre><code class="javascript">textarea = {
+          <section>
+            <h1>offline</h1>
+            <p><a href="http://www.mytextarea.com/">mytextarea.com</a></p>
+            <pre><code class="javascript">textarea = {
   textarea: null,
   init: function() {
     this.textarea = document.getElementsByTagName('textarea')[0];
@@ -452,422 +452,176 @@
     localStorage.setItem('text', this.textarea.value);
   }
 }</code></pre>
-					</section>
-				</section>
+          </section>
+        </section>
 
-				<section>
-					<h1>HOW?</h1>
-				</section>
+        <section>
+          <h1>HOW?</h1>
+        </section>
 
-				<section>
-					<h1>my stack</h1>
-					<ul>
-						<li>Ionic Framework
-							<ul>
-								<li>AngularJS</li>
-								<li>Apache cordova</li>
-							</ul>
-						</li>
-						<li>Adobe PhoneGap Build</li>
-					</ul>
+        <section>
+          <h1>my stack</h1>
+          <ul>
+            <li>Ionic Framework
+              <ul>
+                <li>AngularJS</li>
+                <li>Apache cordova</li>
+              </ul>
+            </li>
+            <li>Adobe PhoneGap Build</li>
+          </ul>
 
-					<aside class="notes">
-						no iphone/Mac/Android/windows needed
-					</aside>
-				</section>
+          <aside class="notes">
+            no iphone/Mac/Android/windows needed
+          </aside>
+        </section>
 
-				<section>
-					<section>
-						<h1><img class="inline" src="img/AngularJS-large.png" /></h1>
-						<p>A really quick introduction to angular</p>
-						<ul>
-							<li>developed by former Java Developers at Google</li>
-							<li>client side JavaScript-SPA-MVC framework</li>
-							<li>2-way data binding</li>
-							<li>dependency injection</li>
-						</ul>
-					</section>
+        <section>
+          <section>
+            <h1><img class="inline" src="img/AngularJS-large.png" /></h1>
+            <p>A really quick introduction to angular</p>
+            <ul>
+              <li>developed by former Java Developers at Google</li>
+              <li>client side JavaScript-SPA-MVC framework</li>
+              <li>2-way data binding</li>
+              <li>dependency injection</li>
+            </ul>
+          </section>
 
-					<section ng-app>
-						<input style="margin-bottom: 1em;" type="text" ng-model="yourName" placeholder="Enter a name here">
-						<h1>Hello {{yourName}}!</h1>
-					</section>
+          <section ng-app>
+            <input style="margin-bottom: 1em;" type="text" ng-model="yourName" placeholder="Enter a name here">
+            <h1>Hello {{yourName}}!</h1>
+          </section>
 
-					<section>
-						<pre><code class="html">&lt;script src="angular.min.js"&gt;&lt;/script&gt;
+          <section>
+            <pre><code class="html">&lt;script src="angular.min.js"&gt;&lt;/script&gt;
 
 &lt;body ng-app&gt;
 
-	&lt;input type="text" ng-model="yourName" placeholder="Enter a name"&gt;
-	&lt;h1&gt;Hello {{yourName}}!&lt;/h1&gt;
+  &lt;input type="text" ng-model="yourName" placeholder="Enter a name"&gt;
+  &lt;h1&gt;Hello {{yourName}}!&lt;/h1&gt;
 
 &lt;/body&gt;</code></pre>
-					</section>
-				</section>
+          </section>
 
+          <section id="ListApp">
+            <script type="text/javascript">
 
+            var module = angular.module('ListApp', []);
+            module.controller('ListCtrl', function ($scope) {
+              $scope.things = [
+                {
+                  name: "AngularJS",
+                  color: "Red",
+                  hidden: false
+                },
+                {
+                  name: "Vaadin",
+                  color: "Blue",
+                  hidden: false
+                },
+                {
+                  name: "Wicket",
+                  color: "orange",
+                  hidden: false
+                }
+              ];
 
+              $scope.hideOldStuff = function() {
+                $scope.things[1].hidden = !$scope.things[1].hidden;
+                $scope.things[2].hidden = !$scope.things[2].hidden;
+              }
+            });
 
+            angular.element(document).ready(function() {
+              var myDiv1 = document.getElementById("ListApp");
+              angular.bootstrap(myDiv1, ["ListApp"]);
+            });
+            </script>
+            <div ng-controller="ListCtrl">
+              <h1>Only a list</h1>
+              <p><button ng-click="hideOldStuff()">Hide old stuff</button></p>
+              <ul>
+                <li ng-repeat="thing in things" style="color:{{thing.color}}" ng-hide="thing.hidden">{{thing.name}}</li>
+              </ul>
+            </div>
+          </section>
 
+          <section>
+            <pre><code class="javascript">var module = angular.module('ListApp', []);
+module.controller('ListCtrl', function ($scope) {
+  $scope.things = [
+    { name: "AngularJS", color: "Red", hidden: false },
+    { name: "Vaadin", color: "Blue", hidden: false },
+    { name: "Wicket", color: "orange", hidden: false }
+  ];
 
-
-
-
-
-
-
-
-
-
-
-				<section>
-					<h1>Read more / sources</h1>
-					<ul>
-						<li><a href="http://www.html5rocks.com/">HTML5 rocks</a></li>
-						<li><a href="http://www.html5rocks.com/en/tutorials/device/orientation/">HTML5 device orientation</a></li>
-					</ul>
-				</section>
-
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
+  $scope.hideOldStuff = function() {
+    $scope.things[1].hidden = !$scope.things[1].hidden;
+    $scope.things[2].hidden = !$scope.things[2].hidden;
   }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+});</code></pre>
+          </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+          <section>
+            <pre><code class="html">&lt;div ng-controller="ListCtrl"&gt;
+  &lt;h1&gt;Only a list&lt;/h1&gt;
+  &lt;button ng-click="hideOldStuff()"&gt;Hide old stuff&lt;/button&gt;
+  &lt;ul&gt;
+    &lt;li ng-repeat="thing in things" style="color:{{thing.color}}" 
+      ng-hide="thing.hidden"&gt;
+      {{thing.name}}
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+          </section>
+        </section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+        <section>
+          <h1>Read more / sources</h1>
+          <ul>
+            <li><a href="http://www.html5rocks.com/">HTML5 rocks</a></li>
+            <li><a href="http://www.html5rocks.com/en/tutorials/device/orientation/">HTML5 device orientation</a></li>
+          </ul>
+        </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+      </div>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+    </div>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+    <script>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-			</div>
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-		</div>
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    </script>
 
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
-	</body>
+  </body>
 </html>
+
