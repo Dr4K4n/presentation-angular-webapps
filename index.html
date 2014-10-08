@@ -161,6 +161,19 @@
           <h1>Agenda</h1>
           <h2>why?</h2>
           <h2>how?</h2>
+
+          <aside class="notes">
+            Why Mobile Web Apps? Is it a good idea?
+
+            as soon as you are convinced
+
+            How to build a mobile web app
+          </aside>
+        </section>
+
+        <section>
+          <h1>why?</h1>
+          <img src="img/gifs/but-why.gif">
         </section>
 
         <section>
@@ -170,6 +183,11 @@
               <li>Native</li>
               <li>Web / Hybrid</li>
             </ul>
+
+            <aside class="notes">
+              You can also use model driven approches -> complex -> big apps
+              Some frameworks, always need to be adapted
+            </aside>
           </section>
 
           <section>
@@ -177,21 +195,21 @@
             <table>
               <tr>
                 <th></th>
-                <th>Android</th>
-                <th>iOS</th>
-                <th>Windows Phone</th>
+                <th class="fragment" data-fragment-index="1">Android</th>
+                <th class="fragment" data-fragment-index="2">iOS</th>
+                <th class="fragment" data-fragment-index="3">Windows Phone</th>
               </tr>
               <tr>
                 <th>languages</th>
-                <td>Java, C</td>
-                <td>Objective-C, Swift</td>
-                <td>C#, Visual Basic, C++</td>
+                <td class="fragment" data-fragment-index="1">Java, C</td>
+                <td class="fragment" data-fragment-index="2">Objective-C, Swift</td>
+                <td class="fragment" data-fragment-index="3">C#, Visual Basic, C++</td>
               </tr>
               <tr>
                 <th>tools</th>
-                <td>Eclipse/Android Studio</td>
-                <td>MacOS, XCode</td>
-                <td>Windows, Visual Studio</td>
+                <td class="fragment" data-fragment-index="1">Eclipse/Android Studio</td>
+                <td class="fragment" data-fragment-index="2">MacOS, XCode</td>
+                <td class="fragment" data-fragment-index="3">Windows, Visual Studio</td>
               </tr>
             </table>
           </section>
@@ -204,6 +222,17 @@
               <li>Appcelerator Titanium</li>
               <li>RhoMobile</li>
             </ul>
+
+            <aside class="notes">
+              phonegap/cordova is the "market leader"
+
+              Phonegap vs. cordova?
+              - initially named phonegap
+              - bought from adobe
+              - code contributed to apache, named "cordova"
+              - cordova is the open source
+              - functionally nearly identical
+            </aside>
           </section>
         </section>
 
@@ -240,7 +269,7 @@
             <h2>examples</h2>
             <img class="logo" src="img/spotify.png" />
             <img class="logo" src="img/fb_icon.png" />
-            <img class="logo" src="img/angry-bird-icon.png" />
+            <img class="logo" src="img/youtube.png" />
           </section>
         </section>
 
@@ -270,7 +299,7 @@
             <h2>examples</h2>
             <img class="logo" src="img/spon-icon.png" />
             <img class="logo" src="img/itunes.png" />
-            <img class="logo" src="img/bbc-olympics.png" />
+            <img class="logo" src="img/Wikipedia.png" />
           </section>
 
           <section>
@@ -301,6 +330,11 @@
         </section>
 
         <section>
+          <section>
+            <h1>JavaScript</h1>
+            <img src="img/gifs/uhy.gif">
+          </section>
+
           <section>
             <h1>JavaScript</h1>
             <p>It is better now.</p>
@@ -355,17 +389,30 @@
                 <td class="fragment" data-fragment-index="7"><a href="http://www.google.de/intl/de/chrome/browser/">Chrome dev tools</a></td>
               </tr>
             </table>
+
+            <aside class="notes">npm, sublime text, karma, phantomjs, protractor, gulp, firefox</aside>
+          </section>
+
+          <section>
+            <h1>javascript debugging</h1>
+            <h1 class="fragment" data-fragment-index="1">remote</h1>
+            <p class="fragment" data-fragment-index="1">chrome://inspect/</p>
+
+            <aside class="notes">demo - debugging. Welchen code nehmen??<br>demo remote debugging mit android emulator</aside>
           </section>
         </section>
 
         <section>
           <section>
-            <h1>styling</h1>
+            <h1>website styling</h1>
             <ul>
-              <li>no big difference</li>
               <li><span style="color:#97ca43;">responsive webdesign</span></li>
               <li>MOBILE FIRST!</li>
             </ul>
+          </section>
+
+          <section>
+            <img src="img/device-sales.jpg" />
           </section>
 
           <section>
@@ -373,10 +420,24 @@
           </section>
 
           <section>
-            <h1>styling</h1>
+            <h1>web app styling</h1>
+            <ul>
+              <li>user experience</li>
+              <li>gestures</li>
+              <li>portrait/landscape</li>
+            </ul>
+
+            <aside class="notes">
+              UX = User expects an "App" to behave diffent than a website. (slide in menu)
+              swipe, pinch to zoom
+            </aside>
+          </section>
+
+
+          <section>
             <p>there are a lot of frameworks to support you. CSS and JS</p>
             <ul>
-              <li>Bootstrap</li>
+              <li>Bootstrap (Angular-UI)*</li>
               <li>Ionic</li>
               <li>jQuery Mobile</li>
               <li>Sencha Touch</li>
@@ -384,38 +445,71 @@
               <li>KendoUI</li>
               <li>...</li>
             </ul>
+
+            <aside class="notes">"Who knows bootstrap?" -> webseite zeigen <a href="http://getbootstrap.com/css/">bootstrap</a><br>
+            <a href="http://ionicframework.com/docs/components/#header">ionic</a> - CSS components for mobile</aside>
           </section>
         </section>
 
         <section>
           <section>
             <h1>device integration</h1>
-            <p>HTML5 to the rescue. There are APIs for...</p>
-            <ul>
-              <li>camera</li>
-              <li>microphone</li>
-              <li>location (gps/network/wifi)</li>
-              <li>device orientation</li>
-              <li>filesystem</li>
-            </ul>
+            <div class="fragment" data-fragment-index="1">
+              <p>HTML5 to the rescue. There are APIs for...</p>
+              <ul>
+                <li>camera</li>
+                <li>microphone</li>
+                <li>location (gps/network/wifi)</li>
+                <li>device orientation</li>
+                <li>filesystem</li>
+              </ul>
+            </div>
+
+            <aside class="notes">
+              which hardware makes a phone special? different from a pc?
+            </aside>
           </section>
 
           <section>
             <h1>device integration</h1>
-            <p>phonegap has plugins to use even more. They wrap are native API/library into JavaScript.</p>
-            <ul>
-              <li>choose image from gallery</li>
-              <li>use google speech recognition</li>
-              <li>use native dialogs</li>
-              <li>make in-app purchases</li>
-              <li>...</li>
-            </ul>
+            <div class="fragment" data-fragment-index="1">
+              <p>phonegap has plugins to use even more. They wrap are native API/library into JavaScript.</p>
+              <ul>
+                <li>choose image from gallery</li>
+                <li>use google speech recognition</li>
+                <li>use native dialogs</li>
+                <li>notifications</li>
+                <li>make in-app purchases</li>
+                <li>recieve intents/accept URLs</li>
+              </ul>
+            </div>
+
+            <aside class="notes">
+              How can my app better integrate into my phone operating system?
+
+              Click on a youtube link in facebook app or website -> youtube app
+            </aside>
+          </section>
+
+          <section>
+            <h1>device integration</h1>
+            <div class="fragment" data-fragment-index="1">
+              <p>Where is it getting complicated?</p>
+              <ul>
+                <li>widgets</li>
+                <li>background services</li>
+              </ul>
+            </div>
+            <p class="fragment" data-fragment-index="2">You can implement this native and still include it</p>
+
+            <aside class="notes">Hybrid, there are some cordova plugins, maybe even write your own?</aside>
           </section>
         </section>
 
         <section>
           <section>
             <h1>offline</h1>
+            <div class="fragment" data-fragment-index="1">
             <p>Again HTML5 to the rescue</p>
             <ul>
               <li>SPAs = "fat clients"</li>
@@ -423,6 +517,7 @@
               <li>Data storage beyond cookies</li>
               <li>Online/Offline events</li>
             </ul>
+            </div>
           </section>
 
           <section>
@@ -457,6 +552,7 @@
 
         <section>
           <h1>HOW?</h1>
+          <img src="img/gifs/how.gif" style="zoom: 1.5">
         </section>
 
         <section>
@@ -473,6 +569,8 @@
 
           <aside class="notes">
             no iphone/Mac/Android/windows needed
+
+            I will give a short introduction on all of these
           </aside>
         </section>
 
@@ -549,6 +647,7 @@
 
           <section>
             <pre><code class="javascript">var module = angular.module('ListApp', []);
+
 module.controller('ListCtrl', function ($scope) {
   $scope.things = [
     { name: "AngularJS", color: "Red", hidden: false },
@@ -578,10 +677,111 @@ module.controller('ListCtrl', function ($scope) {
         </section>
 
         <section>
+          <section>
+            <h1>cordova</h1>
+            <img class="big" src="img/cordova_bot.png">
+
+            <aside class="notes">
+              this is the "mini browser"<br>
+              CLI to create & build hybrid web apps<br>
+              plugins<br>
+            </aside>
+          </section>
+
+          <section>
+            <h1>cordova</h1>
+            <pre><code class="bash">cordova create hello com.prodyna.hello HelloWorld
+
+cd hello
+
+cordova platform add android
+
+cordova build
+
+cordova run --device</code></pre>
+
+            <aside class="notes">
+              !build needs android/ios/wp SDKs installed on local machine!<br>
+              sessions.sh mit doitlive ausführen?
+            </aside>
+          </section>
+
+          <section>
+            <h1>plugins</h1>
+            <pre><code class="bash">cordova plugin add org.apache.cordova.camera</code></pre>
+            <pre><code class="javascript">navigator.camera.getPicture( cameraSuccess, cameraError, cameraOptions );</code></pre>
+
+            <aside class="notes">"Takes a photo using the camera, or retrieves a photo from the device's image gallery. The image is passed to the success callback as a base64-encoded String, or as the URI for the image file. The method itself returns a CameraPopoverHandle object that can be used to reposition the file selection popover."<br>
+            plugins are for certain platforms only, some support all</aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1><img class="inline" src="img/ionic-logo-white.svg"></h1>
+            <ul class="none">
+              <li>CSS, HTML & AngularJS components</li>
+              <li>cordova-like CLI</li>
+            </ul>
+
+            <aside class="notes">
+              central part are the css components optimized for mobile devices<br>
+              provide a platform for mobile web app development.
+            </aside>
+          </section>
+
+          <section>
+            <h1>ionic</h1>
+            <pre><code class="bash">ionic start myApp tabs
+
+cd myApp
+
+ionic platform add ios
+
+ionic build ios
+
+ionic emulate ios</code></pre>
+
+            <aside class="notes">pretty much like cordova, "start" is different, "tabs" is a template</aside>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>Phonegap build</h1>
+            <p>Free* build service by Adobe</p>
+            <img class="logo" src="img/buildbot-hero.png">
+
+            <aside class="notes">
+              For personal use 1 private app and unlimited apps from github repos
+            </aside>
+          </section>
+
+          <section>
+            <img class="big" src="img/build-diagram.png">  
+
+            <aside class="notes">No Windows, MacOS needed to build the app for the app stores<br>
+            Fraport Mac Mini</aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>example</h1>
+
+            <aside class="notes">a simple example app built with ionic running on an android emulator. SPO-Portal?</aside>
+          </section>
+
+        </section>
+
+        <section>
           <h1>Read more / sources</h1>
           <ul>
             <li><a href="http://www.html5rocks.com/">HTML5 rocks</a></li>
             <li><a href="http://www.html5rocks.com/en/tutorials/device/orientation/">HTML5 device orientation</a></li>
+            <li><a href="http://www.html5rocks.com/en/mobile/nativedebate/">HTML5 vs. Native</a></li>
+            <li><a href="http://developer.telerik.com/featured/the-state-of-hybrid-mobile-development/">The State of Hybrid Mobile Development</a></li>
           </ul>
         </section>
 
