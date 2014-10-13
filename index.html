@@ -128,11 +128,25 @@
         <section>
           <h3><img src="prodyna.png" style="border:0" /></h3>
           <h2>Mobile Web Apps with AngularJS</h2>
+
+          <aside class="notes"><pre>
+          I love the web, I love to program for the web.
+
+          In fact I love it so much, this presentation is a website! 
+          on github ;)
+
+          But before we get to the real topic, a few words about myself.
+          </pre></aside>
         </section>
 
         <section>
           <img class="big" src="img/gifs/say-you-do-here.gif" style="zoom:2"/>
 
+          <aside class="notes"><pre>
+            Some of you may ask yourself. 
+
+            "Never heard of him, what does he even do around here?"
+          </pre></aside>
         </section>
 
         <section>
@@ -144,36 +158,66 @@
             <li><span style="color:#97ca43;">PRODYNA</span> Düsseldorf since 10/2011</li>
             <li>Bucher Reisen ever since</li>
             <li>SCMA & ESD - Web Technologies</li>
-        <!--    <li style="margin-top:1em">Java SE/EE, JavaScript</li>
-            <li>Hibernate, Vaadin, AngularJS</li>
-            <li>DB2, MySQL, MongoDB</li>
-            <li>Maven, Jenkins, Jira</li>
-            <li>Linux, Android</li> -->
+            <li>Linux</li>
           </ul>
+
+          <aside class="notes"><pre>
+            the last point is important, I use linux on a everyday basis. But to give this presentation a had to use windows, GoToMeeting doesn't work under Linux.
+          </pre></aside>
 
         </section>
 
         <section>
           <img class="big" src="img/skills.png">
+
+          <aside class="notes"><pre>Data from PRODYNA OnAir
+prepared by a tiny JavaScript
+
+enough about myselfs, lets talk about mobile web apps</pre></aside>
         </section>
 
         <section>
           <h1>Agenda</h1>
+          <h2>what?</h2>
           <h2>why?</h2>
           <h2>how?</h2>
 
-          <aside class="notes">
+          <aside class="notes"><pre>
+          what I mean with "Mobile Web App"
+
             Why Mobile Web Apps? Is it a good idea?
 
-            as soon as you are convinced
+            - as soon as you are convinced -
 
             How to build a mobile web app
-          </aside>
+          </pre></aside>
+        </section>
+
+        <section>
+          <h1>mobile web apps</h1>
+          <ul>
+            <li class="fragment" data-fragment-index="1">look like normal apps to install on a smartphone/tablet</li>
+            <li class="fragment" data-fragment-index="2">implemented with HTML5/JS instead of Java/Objective-C</li>
+            <li style="list-style-type: none;">&nbsp;</li>
+            <li class="fragment" data-fragment-index="3">not websites that are viewed on a mobile device</li>
+          </ul>
+
+          <aside class="notes"><pre>
+            a lot of the stuff I tell you is also valid for mobile websites, with slight changes
+          </pre></aside>
         </section>
 
         <section>
           <h1>why?</h1>
           <img src="img/gifs/but-why.gif">
+
+          <aside class="notes"><pre>
+talk about different possibilities for mobile apps
+
+pro/cons
+
+goal is, you should be able to make a reasonable decision
+          </pre></aside>
         </section>
 
         <section>
@@ -184,10 +228,10 @@
               <li>Web / Hybrid</li>
             </ul>
 
-            <aside class="notes">
+            <aside class="notes"><pre>
               You can also use model driven approches -> complex -> big apps
               Some frameworks, always need to be adapted
-            </aside>
+            </pre></aside>
           </section>
 
           <section>
@@ -212,6 +256,16 @@
                 <td class="fragment" data-fragment-index="3">Windows, Visual Studio</td>
               </tr>
             </table>
+
+            <aside class="notes"><pre>
+- different platforms
+
+- each has its own programming language
+
+- each has its own development environment
+
+- even different operating systems needed!
+            </pre></aside>
           </section>
 
           <section>
@@ -223,7 +277,7 @@
               <li>RhoMobile</li>
             </ul>
 
-            <aside class="notes">
+            <aside class="notes"><pre>
               phonegap/cordova is the "market leader"
 
               Phonegap vs. cordova?
@@ -232,7 +286,7 @@
               - code contributed to apache, named "cordova"
               - cordova is the open source
               - functionally nearly identical
-            </aside>
+            </pre></aside>
           </section>
         </section>
 
@@ -241,6 +295,12 @@
           <h2>What are the <span style="color:#97ca43;">advantages</span>?</h2>
           <h3>&</h3>
           <h2>What are the <span style="color:#97ca43;">use cases</span>?</h2>
+
+          <aside class="notes"><pre>
+            basic idea of the two most common approaches
+
+            when should i use which?
+          </pre></aside>
         </section>
 
         <section>
@@ -253,6 +313,16 @@
               <li class="con">multiple platforms</li>
               <li class="con">programming language</li>
             </ul>
+
+            <aside class="notes"><pre>
+              things are good
+
+              multiple platforms/languages are a problem
+
+              -> hard/much to learn
+
+              So, when is it a good idea to use native development?
+            </pre></aside>
           </section>
 
           <section>
@@ -262,6 +332,15 @@
               <li>styling is super-important (end user market)</li>
               <li>deep device integration (widgets, notifications, share)</li>
             </ul>
+
+            <aside class="notes"><pre>
+              - styling is important to business users, but you can develop web apps that look pretty sharp
+
+              - gps, camera, etc. not that much of a problem
+
+              - device integration: you will later see, this is not that much of a problem.
+              - depending on how deep you wanna get, you need to compare the effots (write cordova plugin vs. implement everything native)
+            </pre></aside>
           </section>
 
           <section>
@@ -270,6 +349,15 @@
             <img class="logo" src="img/spotify.png" />
             <img class="logo" src="img/fb_icon.png" />
             <img class="logo" src="img/youtube.png" />
+
+            <aside class="notes"><pre>
+              - spotify uses lock screen widgets, share functionalities, audio playing, bluetooth a2dp integration
+
+              - facebook was a web app, moved to native because of performance
+
+              - youtube is native, video playing, sharing, widgets
+
+            </pre><h2>lets compare web against this</h2></aside>
           </section>
         </section>
 
@@ -283,6 +371,12 @@
               <li class="con">limited possibilities</li>
               <li class="con">styling</li>
             </ul>
+
+            <aside class="notes"><pre>
+              the last two are no "hard" cons.
+              You CAN do this, its just a little more complicated.
+              Performance is okay, brwosers are getting faster every day
+            </pre></aside>
           </section>
 
           <section>
@@ -292,6 +386,10 @@
               <li>small apps (functionality)</li>
               <li>combined development of app and website</li>
             </ul>
+
+            <aside class="notes"><pre>
+              - business: forms, data driven, UI not 100% important, performance not critical
+            </pre></aside>
           </section>
 
           <section>
@@ -300,10 +398,24 @@
             <img class="logo" src="img/spon-icon.png" />
             <img class="logo" src="img/itunes.png" />
             <img class="logo" src="img/Wikipedia.png" />
+
+            <aside class="notes"><pre>
+              news app, not much more functionality than read articles
+
+              - wikipedia, also not many fancy features
+
+              - itunes, is a great hybrid app!
+            </pre></aside>
           </section>
 
           <section>
             <img src="img/itunes-display.jpg" />
+
+            <aside class="notes"><pre>
+            so, are some great mobile web apps.
+
+            Why not make some more of them? I say
+            </pre></aside>
           </section>
         </section>
 
@@ -313,19 +425,39 @@
           <h3>WebApps look fabolous</h3>
           <h3>WebApps are ready for production</h3>
 
-          <aside class="notes">endusers can hardly notice the difference, I will show you what can be done today</aside>
+          <aside class="notes"><pre>
+          endusers can hardly notice the difference
+
+          I will show you what can be done today.
+
+          BUT I STILL HAVE SOME DOUBTS! Web development is not that much cooler!
+          </pre></aside>
         </section>
 
         <section>
           <section>
             <h1><span style="color:#97ca43;">website</span> vs <span style="color:#97ca43;">web app</span></h1>
             <p>What about...</p>
-            <ul>
-              <li>offline?</li>
-              <li>gps and camera?</li>
-              <li>styling?</li>
-              <li>JavaScript? really?</li>
+            <ul class="fragment" data-fragment-index="1">
+              <li class="fragment" data-fragment-index="1">offline?</li>
+              <li class="fragment" data-fragment-index="1">gps and camera?</li>
+              <li class="fragment" data-fragment-index="1">styling?</li>
+              <li class="fragment" data-fragment-index="1">JavaScript? really?</li>
             </ul>
+
+            <aside class="notes"><pre>
+            offline: no traditional request/response with a server possible
+
+            gps/camera: easy!
+
+            styling: BUT I HATE CSS! There is help out there!
+
+            JavaScript is ugly!
+
+            It's not all that bad (anymore)
+
+            let me start with the last one first
+            </pre></aside>
           </section>
         </section>
 
@@ -338,7 +470,7 @@
           <section>
             <h1>JavaScript</h1>
             <p>It is better now.</p>
-            <ul class="none">
+            <ul class="fragment none" data-fragment-index="1">
               <li class="pro">it is fast</li>
               <li class="pro">good tools</li>
               <li class="pro">good frameworks</li>
@@ -348,6 +480,12 @@
 
           <section>
             <img class="big" src="img/html5_javascript_js.png" />
+
+            <aside class="notes"><pre>
+              with every modern website, these are the 3 to help you
+
+              HTML5, JavaScript (ECMAScript) 5, CSS3 (like the fancy animations of this presentation)
+            </pre></aside>
           </section>
 
           <section>
@@ -390,7 +528,7 @@
               </tr>
             </table>
 
-            <aside class="notes">npm, sublime text, karma, phantomjs, protractor, gulp, firefox</aside>
+            <aside class="notes"><pre>also to note npm, sublime text, karma, phantomjs, protractor, gulp, firefox</pre></aside>
           </section>
 
           <section>
@@ -398,7 +536,7 @@
             <h1 class="fragment" data-fragment-index="1">remote</h1>
             <p class="fragment" data-fragment-index="1">chrome://inspect/</p>
 
-            <aside class="notes">demo - debugging. Welchen code nehmen??<br>demo remote debugging mit android emulator</aside>
+            <aside class="notes"><pre>demo - debugging. t3n.de im chrome vorbereiten und zeigen</pre></aside>
           </section>
         </section>
 
@@ -409,28 +547,50 @@
               <li><span style="color:#97ca43;">responsive webdesign</span></li>
               <li>MOBILE FIRST!</li>
             </ul>
-          </section>
 
-          <section>
-            <img src="img/device-sales.jpg" />
+            <aside class="notes"><pre>this is valid for NORMAL websites
+
+            Fpr Mobile Apps "only" smartphones/tablets</pre></aside>
           </section>
 
           <section>
             <img src="img/Responsive_Webdesign_Basics_Ausschnitt.jpg" />
+
+            <aside class="notes"><pre>just a quick sidenote on responsive webdesign
+
+there is much more to it. But you get the basic idea</pre></aside>
+          </section>
+
+          <section>
+            <img src="img/device-sales.jpg" />
+
+            <aside class="notes"><pre>Why MOBILE FIRST?
+
+Number of device sales
+
+rapid growth / already more
+
+also <b>mobile devices in companies</b> get more important (PD Stream)
+
+just to give you some perspective</pre></aside>
           </section>
 
           <section>
             <h1>web app styling</h1>
-            <ul>
+            <ul class="fragment" data-fragement-index="1">
               <li>user experience</li>
               <li>gestures</li>
               <li>portrait/landscape</li>
             </ul>
 
-            <aside class="notes">
+            <aside class="notes"><pre>
+            What's different to web site styling. additionally
+
+            IDEAS ?
+
               UX = User expects an "App" to behave diffent than a website. (slide in menu)
               swipe, pinch to zoom
-            </aside>
+            </pre></aside>
           </section>
 
 
@@ -446,8 +606,15 @@
               <li>...</li>
             </ul>
 
-            <aside class="notes">"Who knows bootstrap?" -> webseite zeigen <a href="http://getbootstrap.com/css/">bootstrap</a><br>
-            <a href="http://ionicframework.com/docs/components/#header">ionic</a> - CSS components for mobile</aside>
+            <aside class="notes"><pre>"Who knows bootstrap?" -> webseite zeigen <a href="http://getbootstrap.com/css/">bootstrap</a>
+
+            Liferay 6.2 Bootstrap! 
+
+            * Bootstrap not really for MOBILE
+
+            <a href="http://ionicframework.com/docs/components/#header">ionic</a> - CSS components for mobile
+
+            basically they both use a grid to be "responsive"</pre></aside>
           </section>
         </section>
 
@@ -455,7 +622,6 @@
           <section>
             <h1>device integration</h1>
             <div class="fragment" data-fragment-index="1">
-              <p>HTML5 to the rescue. There are APIs for...</p>
               <ul>
                 <li>camera</li>
                 <li>microphone</li>
@@ -463,18 +629,21 @@
                 <li>device orientation</li>
                 <li>filesystem</li>
               </ul>
+              <p class="fragment" data-fragment-index="2">HTML5 has APIs for all of them.</p>
             </div>
 
-            <aside class="notes">
+            <aside class="notes"><pre>
+            SO FAR LEARNT: Styling can be done, looks cool
+
               which hardware makes a phone special? different from a pc?
-            </aside>
+            </pre></aside>
           </section>
 
           <section>
             <h1>device integration</h1>
             <div class="fragment" data-fragment-index="1">
-              <p>phonegap has plugins to use even more. They wrap are native API/library into JavaScript.</p>
-              <ul>
+              <p>phonegap has plugins to use even more. They wrap native APIs/libraries into JavaScript.</p>
+              <ul class="fragment" data-fragment-index="2">
                 <li>choose image from gallery</li>
                 <li>use google speech recognition</li>
                 <li>use native dialogs</li>
@@ -484,11 +653,13 @@
               </ul>
             </div>
 
-            <aside class="notes">
-              How can my app better integrate into my phone operating system?
+            <aside class="notes"><pre>
+            device integration also means:
 
-              Click on a youtube link in facebook app or website -> youtube app
-            </aside>
+              integrate into the phone operating system?
+
+              EXAMPLE: Click on a youtube link in facebook app or website -> youtube app
+            </pre></aside>
           </section>
 
           <section>
@@ -502,22 +673,29 @@
             </div>
             <p class="fragment" data-fragment-index="2">You can implement this native and still include it</p>
 
-            <aside class="notes">Hybrid, there are some cordova plugins, maybe even write your own?</aside>
+            <aside class="notes"><pre>Where are the limits? 
+
+            <b>Its only a matter of time!</b>
+
+            Hybrid, there are some cordova plugins, maybe even write your own?</pre></aside>
           </section>
         </section>
 
         <section>
           <section>
             <h1>offline</h1>
-            <div class="fragment" data-fragment-index="1">
-            <p>Again HTML5 to the rescue</p>
-            <ul>
+            <ul class="fragment" data-fragment-index="1">
               <li>SPAs = "fat clients"</li>
-              <li>AppCache</li>
               <li>Data storage beyond cookies</li>
               <li>Online/Offline events</li>
             </ul>
-            </div>
+            <p class="fragment" data-fragment-index="2">Again HTML5 to the rescue</p>
+
+            <aside class="notes"><pre>
+no server (request/response)
+
+"state" - close app, open app, resume!
+            </pre></aside>
           </section>
 
           <section>
@@ -525,9 +703,16 @@
             <p>some examples</p>
             <ul>
               <li><a href="http://www.mytextarea.com/">mytextarea.com</a></li>
-              <li>Gmail Offline</li>
+              <li>Gmail</li>
               <li>Chrome/Firefox apps</li>
             </ul>
+
+            <aside class="notes"><pre>
+All of these are SPAs that work offline
+
+We need this for Mobile Apps too!
+
+Sidenote: Is it complicated? NEXT SLIDE</pre></aside>
           </section>
 
           <section>
@@ -547,12 +732,20 @@
     localStorage.setItem('text', this.textarea.value);
   }
 }</code></pre>
+
+            <aside class="notes"><pre>
+              So, everything clear, right?
+
+              It seems possible, so HOW best to do it?
+            </pre></aside>
           </section>
         </section>
 
         <section>
           <h1>HOW?</h1>
           <img src="img/gifs/how.gif" style="zoom: 1.5">
+
+          <aside class="notes"><pre>I will present you my stack to build mobile web apps.</pre></aside>
         </section>
 
         <section>
@@ -564,26 +757,37 @@
                 <li>Apache cordova</li>
               </ul>
             </li>
-            <li>Adobe PhoneGap Build</li>
+            <li>Adobe PhoneGap Build service</li>
           </ul>
 
-          <aside class="notes">
-            no iphone/Mac/Android/windows needed
+          <aside class="notes"><pre>
+            no iphone/Mac/Android/windows needed (but good for testing and initial setup...)
 
             I will give a short introduction on all of these
-          </aside>
+          </pre></aside>
         </section>
 
         <section>
           <section>
             <h1><img class="inline" src="img/AngularJS-large.png" /></h1>
-            <p>A really quick introduction to angular</p>
-            <ul>
+            <blockquote>Angular is what HTML would have been
+            had it been designed for applications</blockquote>
+            <ul class="fragment" data-fragment-index="1">
               <li>developed by former Java Developers at Google</li>
               <li>client side JavaScript-SPA-MVC framework</li>
+              <li>templating</li>
+              <li>"web components"</li>
               <li>2-way data binding</li>
               <li>dependency injection</li>
             </ul>
+
+            <aside class="notes"><pre>A really quick introduction to angular
+
+            MVC built in! There is no way without a controller!
+
+            controllers and services are the essential components
+
+            Injection?! Data-Binding?! -> really powerful tools, some EXAMPLES ahead!</pre></aside>
           </section>
 
           <section ng-app>
@@ -600,6 +804,14 @@
   &lt;h1&gt;Hello {{yourName}}!&lt;/h1&gt;
 
 &lt;/body&gt;</code></pre>
+
+            <aside class="notes"><pre>
+            One-Way Databinding EXAMPLE
+
+              Data binding is really easy and very powerful.
+
+              Works not only directly in HTML, also in the services and controllers.
+            </pre></aside>
           </section>
 
           <section id="ListApp">
@@ -673,7 +885,46 @@ module.controller('ListCtrl', function ($scope) {
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
+            <aside class="notes"><pre>Two-Way databinding EXAMPLE
+
+            ng-repeat! cool
+
+            What is this ng-repeat?</pre></aside>
           </section>
+
+          <section>
+            <h1>directives</h1>
+            <blockquote>At a high level, directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's HTML compiler ($compile) to attach a specified behavior to that DOM element or even transform the DOM element and its children.</blockquote>
+
+            <aside class="notes"><pre>Think of them as "extensions" of HTML</pre></aside>
+          </section>
+
+          <section>
+            <h1>built-in directives</h1>
+            <p>ng-app, ng-controller, ng-repeat, ng-show, ng-model, ...</p>
+            <p>make your life easier</p>
+          </section>
+
+          <section>
+            <h1>your own directives</h1>
+            <p>write your own HTML-elements</p>
+            <ul>
+              <li>components used in multiple places</li>
+              <li>components with "special" behaviour</li>
+            </ul>
+
+            <aside class="notes"><pre>manipulate the DOM
+
+            add event listener
+
+            Angular-UI and Ionic heavily rely on this!
+            Lot of special directives!
+
+            EXAMPLES later!
+            enough on Angular -> talk about cordova   
+            </pre></aside>
+          </section>
+
         </section>
 
         <section>
@@ -681,11 +932,11 @@ module.controller('ListCtrl', function ($scope) {
             <h1>cordova</h1>
             <img class="big" src="img/cordova_bot.png">
 
-            <aside class="notes">
-              this is the "mini browser"<br>
-              CLI to create & build hybrid web apps<br>
-              plugins<br>
-            </aside>
+            <aside class="notes"><pre>
+              this is the "mini browser"
+              CLI to create & build hybrid web apps
+              plugins
+            </pre></aside>
           </section>
 
           <section>
@@ -700,10 +951,10 @@ cordova build
 
 cordova run --device</code></pre>
 
-            <aside class="notes">
-              !build needs android/ios/wp SDKs installed on local machine!<br>
+            <aside class="notes"><pre>
+              !build needs android/ios/wp SDKs installed on local machine!
               sessions.sh mit doitlive ausführen?
-            </aside>
+            </pre></aside>
           </section>
 
           <section>
@@ -711,9 +962,11 @@ cordova run --device</code></pre>
             <pre><code class="bash">cordova plugin add org.apache.cordova.camera</code></pre>
             <pre><code class="javascript">navigator.camera.getPicture( cameraSuccess, cameraError, cameraOptions );</code></pre>
 
-            <aside class="notes">"Takes a photo using the camera, or retrieves a photo from the device's image gallery. The image is passed to the success callback as a base64-encoded String, or as the URI for the image file. The method itself returns a CameraPopoverHandle object that can be used to reposition the file selection popover."<br>
-            plugins are for certain platforms only, some support all</aside>
+            <aside class="notes"><pre>"Takes a photo using the camera, or retrieves a photo from the device's image gallery. The image is passed to the success callback as a base64-encoded String, or as the URI for the image file. The method itself returns a CameraPopoverHandle object that can be used to reposition the file selection popover."
+
+            plugins are for certain platforms only, some support all</pre></aside>
           </section>
+
         </section>
 
         <section>
@@ -724,10 +977,13 @@ cordova run --device</code></pre>
               <li>cordova-like CLI</li>
             </ul>
 
-            <aside class="notes">
-              central part are the css components optimized for mobile devices<br>
+            <aside class="notes"><pre>
+              central part are the css components optimized for mobile devices
+
               provide a platform for mobile web app development.
-            </aside>
+
+              Angular + cordova + plugins + nice icing on top
+            </pre></aside>
           </section>
 
           <section>
@@ -745,6 +1001,11 @@ ionic emulate ios</code></pre>
             <aside class="notes">pretty much like cordova, "start" is different, "tabs" is a template</aside>
           </section>
 
+          <section>
+            <h1>ionic</h1>
+            <h2>Example App</h2>
+          </section>
+
         </section>
 
         <section>
@@ -753,16 +1014,17 @@ ionic emulate ios</code></pre>
             <p>Free* build service by Adobe</p>
             <img class="logo" src="img/buildbot-hero.png">
 
-            <aside class="notes">
+            <aside class="notes"><pre>
               For personal use 1 private app and unlimited apps from github repos
-            </aside>
+            </pre></aside>
           </section>
 
           <section>
             <img class="big" src="img/build-diagram.png">  
 
-            <aside class="notes">No Windows, MacOS needed to build the app for the app stores<br>
-            Fraport Mac Mini</aside>
+            <aside class="notes"><pre>No Windows, MacOS needed to build the app for the app stores
+
+            Fraport Mac Mini</pre></aside>
           </section>
         </section>
 
@@ -770,9 +1032,23 @@ ionic emulate ios</code></pre>
           <section>
             <h1>example</h1>
 
+            <p>more sophisticated Apps built with ionic</p>
+
             <aside class="notes">a simple example app built with ionic running on an android emulator. SPO-Portal?</aside>
           </section>
 
+        </section>
+
+        <section>
+          <h1>interested?</h1>
+          <p>ESD Web Technologies Expert Group</p>
+          <p>SCMA - Solution Center Mobile Applications</p>
+          <br>
+          <p>more dialogues/trainings to come!</p>
+
+          <aside class="notes"><pre>HELP wanted!
+
+          AngularJS training if enough participants</pre></aside>
         </section>
 
         <section>
