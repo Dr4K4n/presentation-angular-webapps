@@ -203,7 +203,7 @@ enough about myselfs, lets talk about mobile web apps</pre></aside>
           </ul>
 
           <aside class="notes"><pre>
-            a lot of the stuff I tell you is also valid for mobile websites, with slight changes
+            some of the stuff I tell you is also valid for mobile websites, with slight changes
           </pre></aside>
         </section>
 
@@ -225,12 +225,12 @@ goal is, you should be able to make a reasonable decision
             <h2>Which possibilities do you have?</h2>
             <ul>
               <li>Native</li>
-              <li>Web / Hybrid</li>
+              <li>Hybrid Web</li>
+              <li>other hybrid approaches</li>
             </ul>
 
             <aside class="notes"><pre>
-              You can also use model driven approches -> complex -> big apps
-              Some frameworks, always need to be adapted
+              we'll focus on the first too, but I'll tell you little bit about the others
             </pre></aside>
           </section>
 
@@ -269,16 +269,22 @@ goal is, you should be able to make a reasonable decision
           </section>
 
           <section>
-            <h2>Web / Hybrid</h2>
+            <h2>Hybrid Web</h2>
             <p>website + "mini browser" = native app</p>
             <ul>
               <li>adobe phonegap/apache cordova</li>
               <li>Appcelerator Titanium</li>
-              <li>RhoMobile</li>
             </ul>
 
             <aside class="notes"><pre>
               phonegap/cordova is the "market leader"
+
+              Appcelerator Titanium uses native UI and javascript for the application logic
+              "Interpreted" hybrid apps. -> limited functionality
+
+              phonegap "on steriods" / 
+              without HTML good/bad / 
+              new HEAVY APIs :-(
 
               Phonegap vs. cordova?
               - initially named phonegap
@@ -286,6 +292,41 @@ goal is, you should be able to make a reasonable decision
               - code contributed to apache, named "cordova"
               - cordova is the open source
               - functionally nearly identical
+            </pre></aside>
+          </section>
+
+          <section>
+            <h2>other hybrids</h2>
+            <ul>
+              <li class="fragment" data-fragment-index="1">RhoMobile</li>
+              <li class="fragment" data-fragment-index="1">Xamarin</li>
+              <li class="fragment" data-fragment-index="2">XML VM</li>
+              <li class="fragment" data-fragment-index="2">applause</li>
+            </ul>
+
+            <aside class="notes"><pre>
+            INTERPRETED
+
+              whole runtime delivered on the phone (App Store problems!)
+              - rhomobile (ruby)
+              - xamarin (mono, formerly monotouch)
+
+              - BAD tool support (debugger)
+              - Problems with the app store (runtime not allowed)
+
+              GENERATED
+
+              XML VM (cross compiler)
+              introspect Android Java-Code -> XML -> stack machine (XSLT) -> Objective-C
+              - doesn't work for platform specific components (UI)
+
+              EMF, XTEXT, XPAND
+              - domain (backend integrated apps, games)
+              - write a DSL for this domain
+              - generate APPS
+              - BIG INITIAL INVESTMENT (only sensible if you want to develop many similar apps)
+
+              enterprise app stores
             </pre></aside>
           </section>
         </section>
@@ -297,9 +338,11 @@ goal is, you should be able to make a reasonable decision
           <h2>What are the <span style="color:#97ca43;">use cases</span>?</h2>
 
           <aside class="notes"><pre>
-            basic idea of the two most common approaches
+            you now have a basic idea of the two most common approaches
 
             when should i use which?
+
+            the customer just wants a great app, in most cases he doesn't really care how it is implemented
           </pre></aside>
         </section>
 
@@ -353,7 +396,7 @@ goal is, you should be able to make a reasonable decision
             <aside class="notes"><pre>
               - spotify uses lock screen widgets, share functionalities, audio playing, bluetooth a2dp integration
 
-              - facebook was a web app, moved to native because of performance
+              - facebook was a web app, moved to native because of performance (August 2012 - over 2 years ago)
 
               - youtube is native, video playing, sharing, widgets
 
@@ -363,16 +406,19 @@ goal is, you should be able to make a reasonable decision
 
         <section>
           <section>
-            <h1>Web / hybrid</h1>
+            <h1>Hybrid Web</h1>
             <ul class="none">
               <li class="pro">multiple platforms</li>
               <li class="pro">programming language</li>
+              <li class="pro">development</li>
               <li class="con">performance</li>
               <li class="con">limited possibilities</li>
               <li class="con">styling</li>
             </ul>
 
             <aside class="notes"><pre>
+            development = instant feedback, no emulator, only a webbrowser!
+
               the last two are no "hard" cons.
               You CAN do this, its just a little more complicated.
               Performance is okay, brwosers are getting faster every day
@@ -380,7 +426,7 @@ goal is, you should be able to make a reasonable decision
           </section>
 
           <section>
-            <h1>web / hybrid</h1>
+            <h1>Hybrid Web</h1>
             <ul>
               <li>business apps</li>
               <li>small apps (functionality)</li>
@@ -393,7 +439,7 @@ goal is, you should be able to make a reasonable decision
           </section>
 
           <section>
-            <h1>web / hybrid</h1>
+            <h1>Hybrid Web</h1>
             <h2>examples</h2>
             <img class="logo" src="img/spon-icon.png" />
             <img class="logo" src="img/itunes.png" />
@@ -589,6 +635,9 @@ just to give you some perspective</pre></aside>
             IDEAS ?
 
               UX = User expects an "App" to behave diffent than a website. (slide in menu)
+
+              one hand (phone) - two hands (tablet/pc)
+
               swipe, pinch to zoom
             </pre></aside>
           </section>
@@ -601,6 +650,7 @@ just to give you some perspective</pre></aside>
               <li>Ionic</li>
               <li>jQuery Mobile</li>
               <li>Sencha Touch</li>
+              <li>FeedHenry</li>
               <li>OnsenUI</li>
               <li>KendoUI</li>
               <li>...</li>
@@ -614,7 +664,9 @@ just to give you some perspective</pre></aside>
 
             <a href="http://ionicframework.com/docs/components/#header">ionic</a> - CSS components for mobile
 
-            basically they both use a grid to be "responsive"</pre></aside>
+            basically they both use a grid to be "responsive"
+
+            some have backend integration or bring own backends!</pre></aside>
           </section>
         </section>
 
@@ -967,6 +1019,11 @@ cordova run --device</code></pre>
             plugins are for certain platforms only, some support all</pre></aside>
           </section>
 
+          <section>
+            <h1>cordova</h1>
+            <h2>example app</h2>
+          </section>
+
         </section>
 
         <section>
@@ -988,7 +1045,7 @@ cordova run --device</code></pre>
 
           <section>
             <h1>ionic</h1>
-            <pre><code class="bash">ionic start myApp tabs
+            <pre><code class="bash">ionic start myApp sidemenu
 
 cd myApp
 
@@ -998,7 +1055,9 @@ ionic build ios
 
 ionic emulate ios</code></pre>
 
-            <aside class="notes">pretty much like cordova, "start" is different, "tabs" is a template</aside>
+            <aside class="notes"><pre>pretty much like cordova
+            "start" is different
+            "sidemenu" is a template</pre></aside>
           </section>
 
           <section>
@@ -1034,9 +1093,37 @@ ionic emulate ios</code></pre>
 
             <p>more sophisticated Apps built with ionic</p>
 
+            <p>SPO-Portal Quick Offer</p>
+            <p>sworkit</p>
+
             <aside class="notes">a simple example app built with ionic running on an android emulator. SPO-Portal?</aside>
           </section>
 
+        </section>
+
+        <section>
+          <h1>the future</h1>
+          <ul>
+            <li class="fragment" data-fragment-index="1">Web-Operating-Systems: FirefoxOS, ChromeOS</li>
+            <li class="fragment" data-fragment-index="2">everything will be web</li>
+            <li class="fragment" data-fragment-index="3">native will die</li>
+          </ul>
+
+          <aside class="notes"><pre>
+            webOS, decendant of palm os, developed by Palm, later HP
+            -> open source -> LG (TV sets january 2014)
+          </pre></aside>
+        </section>
+
+        <section>
+          <h1>questions?</h1>
+
+          <aside class="notes"><pre>
+            Apple AppStore Review - no guarantee to get in there
+
+            phonegap is gray area
+
+          </pre></aside>
         </section>
 
         <section>
@@ -1058,6 +1145,7 @@ ionic emulate ios</code></pre>
             <li><a href="http://www.html5rocks.com/en/tutorials/device/orientation/">HTML5 device orientation</a></li>
             <li><a href="http://www.html5rocks.com/en/mobile/nativedebate/">HTML5 vs. Native</a></li>
             <li><a href="http://developer.telerik.com/featured/the-state-of-hybrid-mobile-development/">The State of Hybrid Mobile Development</a></li>
+            <li><a href="http://heikobehrens.net/2010/10/11/cross-platform-app-development-for-iphone-android-co-%E2%80%94-a-comparison-i-presented-at-mobiletechcon-2010/">Cross-Platform App Development</a></li>
           </ul>
         </section>
 
