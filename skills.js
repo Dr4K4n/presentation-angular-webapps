@@ -2529,18 +2529,19 @@ var skills = [
 ];
 
 var index;
+
+var ratings = [];
+ratings['THEORETICAL'] = 1;
+ratings['BASIC'] = 2;
+ratings['ADVANCED'] = 3;
+ratings['PROFICIENT'] = 4;
+ratings['EXPERT'] = 5;
+
 for(index = 0; index < skills.length; index++) {
    var skill = skills[index];
    var name = skill.skillAssignmentInfo.skill.skillName;
    var rating = skill.skillAssignmentInfo.rating;
    name = name.replace(/ /g,"_");
-
-   var ratings = [];
-   ratings['THEORETICAL'] = 1;
-   ratings['BASIC'] = 2;
-   ratings['ADVANCED'] = 3;
-   ratings['PROFICIENT'] = 4;
-   ratings['EXPERT'] = 5;
 
    var counter;
    var wordCount = ratings[rating];
